@@ -1,0 +1,9 @@
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\bin\Debug\proverka.exe.config
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\bin\Debug\proverka.exe
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\bin\Debug\proverka.pdb
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\obj\Debug\proverka.csprojAssemblyReference.cache
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\obj\Debug\proverka.Form1.resources
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\obj\Debug\proverka.Properties.Resources.resources
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\obj\Debug\proverka.csproj.GenerateResource.cache
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\obj\Debug\proverka.exe
+C:\Users\Сигма-М-1\source\repos\proverka\proverka\obj\Debug\proverka.pdb
