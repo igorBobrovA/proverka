@@ -103,7 +103,24 @@ namespace proverka
             {
                 richTextBox2.Text += list[i] + "\n";
             }
-            int y = 0; 
+            richTextBox1.Text += "\n\n";
+            richTextBox2.Text += "\n\n";
+            for (int i = 0; i < 10; i++)
+            {
+                list.Add(R.Next(10, 20));
+                richTextBox1.Text += list[i] + "\n";
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (i == 15)
+                {
+                    list.RemoveAt(i);
+                }
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                richTextBox2.Text += list[i] + "\n";
+            }
         }
     }
 }
