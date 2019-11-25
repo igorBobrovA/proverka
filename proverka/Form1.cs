@@ -112,14 +112,13 @@ namespace proverka
             }
             for (int i = 0; i < list.Count; i++)
             {
-                if (i == 15)
+                if (i != 15)
                 {
-                    list.RemoveAt(i);
+                    richTextBox2.Text += list[i] + "\n";
                 }
-            }
-            for (int i = 0; i < list.Count; i++)
-            {
-                richTextBox2.Text += list[i] + "\n";
+                else
+                    list.RemoveAt(i);
+
             }
         }
     }
