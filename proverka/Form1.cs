@@ -82,14 +82,15 @@ namespace proverka
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+       
+        private void button3_Click_1(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
             richTextBox2.Text = "";
             List<int> list = new List<int>();
             for (int i = 0; i < 15; i++)
             {
-                list.Add(R.Next(1,11));
+                list.Add(R.Next(1, 11));
                 richTextBox1.Text += list[i] + "\n";
             }
             for (int i = 0; i < list.Count; i++)
@@ -99,26 +100,51 @@ namespace proverka
                     list.RemoveAt(i);
                 }
             }
-            for (int i = 0; i < list.Count; i++)
-            {
-                richTextBox2.Text += list[i] + "\n";
-            }
-            richTextBox1.Text += "\n\n";
-            richTextBox2.Text += "\n\n";
             for (int i = 0; i < 10; i++)
             {
-                list.Add(R.Next(10, 20));
+                list.Add(R.Next(10,21));
                 richTextBox1.Text += list[i] + "\n";
             }
             for (int i = 0; i < list.Count; i++)
             {
-                if (i != 15)
+                if (list[i] == 15)
                 {
-                    richTextBox2.Text += list[i] + "\n";
+                    list.RemoveAt(i);
+                    i--;
+                }
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                richTextBox2.Text += list[i] + "\n";
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+            richTextBox2.Text = "";
+            List<int> list = new List<int>();
+            for (int i = 0; i < 30; i++)
+            {
+                list.Add(R.Next(1, 1001));
+                if (list[i] % 14 == 3)
+                {
+                    richTextBox1.Text += list[i] + "\n";
                 }
                 else
+                    richTextBox1.Text += "\t" + list[i] + "\n";
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] % 14 == 3)
+                {
                     list.RemoveAt(i);
-
+                    i--;
+                }
+            }
+            for (int i = 0; i < list.Count; i++)
+            {
+                richTextBox2.Text += list[i] + "\n";
             }
         }
     }
